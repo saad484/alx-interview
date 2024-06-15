@@ -1,35 +1,35 @@
 #!/usr/bin/python3
+"""
+Module Docs
+"""
 
-"""Function calculate the MinimumOperations """
 
-
-def minOperations(n):
+def minOperations(n: int) -> int:
     """
-    Calculate the minimum numbers of operations needed to result
-    in exactly n 'H' charachters in the file
+    Calculate the fewest number of operations needed to result in exactly
+    n 'H' characters in the file.
 
     Args:
-    - n (int): The desired number of 'H' charachters.
+    - n (int): The desired number of 'H' characters.
 
     Returns:
-    - int: The minimum number of operations needed if n
-        is impossible to achieve,
-    return 0.
+    - int: The fewest number of operations needed. If n is impossible to
+    achieve, return 0.
     """
-
     if not isinstance(n, int) or n <= 0:
         return 0
 
     operations = 0
     divisor = 2
 
-    while divisor * divisor <= 2:
+    while divisor * divisor <= n:
         if n % divisor == 0:
             n //= divisor
-            operations += n
+            operations += divisor
         else:
             divisor += 1
-    '''if n is prime number greater than 1, add it to operations'''
+
+    # If n is a prime number greater than 1, add it to operations
     if n > 1:
         operations += n
 
