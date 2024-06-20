@@ -4,7 +4,7 @@ Pascal Triangle
 """
 
 
-def pascal_triangle(n) -> list:
+def pascal_triangle(n):
     """
     pascal triangle O(n^2)
     """
