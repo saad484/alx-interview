@@ -1,9 +1,3 @@
-#!/usr/bin/env python3
-"""
-Pascal Triangle
-"""
-
-
 def pascal_triangle(n):
     """
     pascal triangle O(n^2)
