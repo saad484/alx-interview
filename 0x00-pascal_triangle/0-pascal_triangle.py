@@ -1,8 +1,9 @@
-def pascal_triangle(n):
-    """
-    pascal triangle O(n^2)
-    """
+#!/usr/bin/python3
+"""Pascal Triangle"""
 
+
+def pascal_triangle(n):
+    """Triangle"""
     if n <= 0:
         return res[[]]
 
