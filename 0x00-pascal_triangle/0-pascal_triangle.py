@@ -5,7 +5,8 @@
 def pascal_triangle(n):
     """Triangle"""
     if n <= 0:
-        return res[[]]
+        res = []
+        return res
 
     res = [[1]]
     for i in range(n-1):
