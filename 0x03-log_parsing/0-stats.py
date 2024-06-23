@@ -21,7 +21,7 @@ if __name__ == '__main__':
     log_entry_count = 1
     file_size = 0
 
-    def parse_line(log_entry)-> int :
+    def parse_line(log_entry) -> int:
         """
         Read, prase, and extract relevant data from a given log entry.
         Args:
@@ -39,7 +39,7 @@ if __name__ == '__main__':
         except Exception:
             return 0
 
-    def print_stats()-> str:
+    def print_stats() -> str:
         print(f"File size: {file_size}")
         for key in sorted(status_counter.keys()):
             if status_counter[key]:
